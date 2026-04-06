@@ -1,5 +1,6 @@
 docker network create roboshop
 cd mongodb/
+docker build -t mongodb:1.0.0 .
 docker run -d --network roboshop --name mongodb mongodb:1.0.0
 cd ..
 cd catalogue/
