@@ -7,6 +7,7 @@ cd catalogue/
 docker build -t catalogue:1.0.0 .
 docker run -d --network roboshop --name catalogue catalogue:1.0.0
 cd ..
+docker run -d --name redis --network roboshop redis:7
 cd frontend/
 docker build -t frontend:1.0.0 .
 docker run -d -p 80:80 --network roboshop --name frontend frontend:1.0.0

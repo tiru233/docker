@@ -4,5 +4,7 @@ sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo systemctl status docker
+git clone https://github.com/tiru233/docker.git
+cd docker
 sudo usermod -aG docker ec2-user
 exit
